@@ -79,7 +79,7 @@ docker stop $(docker ps -a -q)
 ## Docker Delete all stopped containers
 
 ```sh
-2.docker  rm $(docker -a -q)
+2.docker  rm $(docker ps-a -q)
 ```
 ## Docker rmi (removes image by their ID)
 delete an image from local storage
