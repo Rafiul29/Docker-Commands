@@ -92,7 +92,7 @@ docker rmi -f $(docker images -p)
 ```
 ## Docker Bulid
 build an image from a specific docker file
--t = tagname >>>>>>>>>>>   . = current directory
+-t = tagname  <<>>  dot (.) = current directory
 ```sh 
 docker bulid -t <tagname> .
 ```
