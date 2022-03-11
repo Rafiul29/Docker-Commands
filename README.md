@@ -72,16 +72,23 @@ Delete a stopped container
 ```sh
 docker container rm <contianer id>  <contianer id> 
 ```
-## Docker remove all container 
-Stop the container before attempting removal or force remove
+## Docker stop all running all containers
 ```sh
-1. docker container ls -aq
-2.docker container rm $(docker container ls -aq)
+docker stop $(docker ps -a -q)
+```
+## Docker Delete all stopped containers
+
+```sh
+2.docker  rm $(docker -a -q)
 ```
 ## Docker rmi (removes image by their ID)
 delete an image from local storage
 ```sh
 docker rmi <image-id>
+```
+## Docker Delete all images
+```sh
+docker rmi -f $(docker images -p)
 ```
 ## Docker Bulid
 build an image from a specific docker file
