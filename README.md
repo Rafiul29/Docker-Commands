@@ -92,8 +92,9 @@ docker rmi -f $(docker images -p)
 ```
 ## Docker Bulid
 build an image from a specific docker file
+-t = tagname >>>>>>>>>>>   . = current directory
 ```sh 
-docker bulid <path to docker file>
+docker bulid -t <tagname> .
 ```
 ## Docker contianer inspect
 Docker inspect provides detailed information on constructs controlled by Docker.
