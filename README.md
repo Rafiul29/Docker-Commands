@@ -88,7 +88,7 @@ docker rmi <image-id>
 ```
 ## Docker Delete all images
 ```sh
-docker rmi -f $(docker images -p)
+docker rmi -f $(docker images -q)
 ```
 ## Docker Bulid
 build an image from a specific docker file
