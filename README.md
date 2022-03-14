@@ -75,6 +75,7 @@ docker container rm <contianer id>  <contianer id>
 ## Docker stop all running all containers
 ```sh
 docker stop $(docker ps -a -q)
+docker ps -q -a | xargs docker rm
 ```
 ## Docker Delete all stopped containers
 
